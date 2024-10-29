@@ -1,26 +1,44 @@
-- pipeline: "test"
-  events:
-  - type: "PUSH"
-    refs:
-    - "refs/heads/master"
-  fail_on_prepare_env_warning: true
-  actions:
-  - action: "Transfer to 43.205.119.169"
-    type: "SFTP"
-    input_type: "BUILD_ARTIFACTS"
-    local_path: "/enterpriseportalbuild.zip"
-    login: "ubuntu"
-    host: "43.205.119.169"
-    server_key: "secure!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.01xZPTAGXYb5CxWUXQXqoA=="
-    authentication_mode: "PRIVATE_KEY"
-  - action: "[43.205.119.169] Execute sudo systemctl restart nginx "
-    type: "SSH_COMMAND"
-    login: "ubuntu"
-    host: "43.205.119.169"
-    server_key: "secure!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.01xZPTAGXYb5CxWUXQXqoA=="
-    authentication_mode: "PRIVATE_KEY"
-    commands:
-    - "sudo apt install unzip -y"
-    - "sudo unzip -o /home/ubuntu/enterpriseportalbuild.zip -d /var/www/html"
-    - "sudo systemctl restart nginx "
-    run_as_script: true
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/harshmizzle/demo.git', branch: 'main'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    // Use Node.js to run npm commands
+                    sh 'npm install'
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                script {
+                    // Build the React app
+                    sh 'npm run build'
+                }
+            }
+        }
+       
+        stage('Deploy') {
+            steps {
+                script {
+                    // Add deployment steps here
+                    echo 'Deployment steps go here'
+                }
+            }
+        }
+        stage('demo') {
+            steps {
+                script {
+                    // Add deployment steps here
+                    echo 'Deployment steps go here'
+                }
+            }
+        }
+    }
+}
