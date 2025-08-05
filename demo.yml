@@ -36,7 +36,7 @@ pipeline {
             steps {
                 script {
                     // Add deployment steps here
-                    echo 'Deployment steps go here'
+                    echo 'Deployment steps go here hello'
                 }
             }
         }
